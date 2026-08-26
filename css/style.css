@@ -68,6 +68,24 @@ body {
     background-repeat: no-repeat;
 
     aspect-ratio: 1/1; /*Visar hela bakgrundsbilden, inte bara så mycket av bilden som textfälten är*/
+
+    /*För att kunna sätta text på rätt ställe, dela upp hela main i grids. Forts längre ner...*/
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+}
+
+    /*Här placerar jag ut var på griden min text ska vara*/
+#main h1 {
+    grid-column: 4 / 7;
+    grid-row: 3 / 3;
+    text-align: center;
+}
+
+#main p{
+    grid-column: 4/7;
+    grid-row: 4/6;
+    text-align: center;
 }
 
 
