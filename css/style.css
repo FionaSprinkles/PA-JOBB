@@ -1,0 +1,16 @@
+body {
+    background-color: #7c993c;
+    
+    
+}
+
+/*Första sektionen av sidan*/
+#main{
+    background-image: url("../img/Pavag-till-jobb.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+
+    aspect-ratio: 1/1; /*Visar hela bakgrundsbilden, inte bara så mycket av bilden som textfälten är*/
+}
+
+
