@@ -1,9 +1,59 @@
 
 header img{
     width: 100%;
+    display: block; /*Inget mellanrum mellan header och nav*/
+    
     
 }
 
+/* ----- NAVIGATION ----- */
+
+
+nav ul{
+    margin: 0%;
+    
+    width: 100%;
+    height: 30px;
+    list-style-type: none;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    
+}
+
+nav a{
+    height: 100%;
+    display: flex;
+    align-items: center; /*Centrera upp och ner*/
+    justify-content: center; /*Centrera höger-vänster*/
+    
+}
+
+nav a:hover::before {
+    content: ""; /*Behöver content för att kunna displaya bild*/
+    display: inline-block; /*Visar bilden på samma rad som länken*/
+    width: 50px;
+    height: 30px;
+    background-image: url("../img/wing-left.png");
+    background-size: contain; /*Anpassa bilden i området utan att beskära, skalar ner till rätt size*/
+    background-repeat: no-repeat;
+
+}
+
+nav a:hover::after {
+    content: ""; /*Behöver content för att kunna displaya bild*/
+    display: inline-block; /*Visar bilden på samma rad som länken*/
+    width: 50px;
+    height: 30px;
+    background-image: url("../img/wing-right.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+
+/* ----- BODY ----- */
 body {
     margin: 0%;
     background-color: #7c993c;
@@ -11,7 +61,7 @@ body {
     
 }
 
-/*Första sektionen av sidan*/
+/* ----- Första sektionen av sidan ----- */
 #main{
     background-image: url("../img/Pavag-till-jobb.png");
     background-size: 100% auto;
