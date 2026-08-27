@@ -4,7 +4,7 @@ async function loadComponent (selector, file){
     const response = await fetch(file);
 
     if (!response.ok) {
-        throw new Error ('Kunde inte ladda ${file}');
+        throw new Error (`Kunde inte ladda ${file}`);
     }
 
     element.innerHTML = await response.text();
