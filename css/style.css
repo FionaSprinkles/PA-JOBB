@@ -89,3 +89,31 @@ body {
 }
 
 
+/* ----- ZigZag bild - text - text - bild ----- */
+
+#zigzag {
+    background-image: url("../img/bakgrund1.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+
+    aspect-ratio: 1 / 1; /* kvadratiska bilder*/
+    object-fit: cover; /* gör så att bilderna inte blir smushade*/
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+#zigzag img {
+    width: 60%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+
+    justify-self: center;
+    align-self: center;
+}
+#zigzag p {
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+}
