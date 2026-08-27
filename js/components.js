@@ -11,3 +11,4 @@ async function loadComponent (selector, file){
 }
 
 loadComponent("#footer", "footer.html");
+loadComponent("#header", "header.html");
