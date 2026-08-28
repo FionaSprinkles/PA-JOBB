@@ -30,7 +30,7 @@
                 },
                 {
                     "text": "Äter inte fast föda",
-                    "character": "Artisten själv"
+                    "character": "Artisten Själv"
                 },
                 {
                     "text": "Grönsakssoppa",
@@ -38,6 +38,27 @@
                 },
                 {
                     "text": "En gurka",
+                    "character": "Ynis"
+                }
+            ]
+        },
+        {
+            "question": "Vilken årstid är bäst??",
+            "answers":[
+                {
+                    "text": "Höst",
+                    "character": "Fiffen"
+                },
+                {
+                    "text": "Vinter",
+                    "character": "Artisten Själv"
+                },
+                {
+                    "text": "Vår",
+                    "character": "Rasø"
+                },
+                {
+                    "text": "Sommar",
                     "character": "Ynis"
                 }
             ]

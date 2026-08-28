@@ -1,4 +1,32 @@
+/* 
+JSON
+ ↓
+fetch
+ ↓
+hämta fråga
+ ↓
+skapa svarsknappar
+ ↓
+klick
+ ↓
++1 poäng
+ ↓
+currentQuestion++
+ ↓
+visa nästa fråga
+ ↓
+hitta högsta poängen
+ ↓
+showResult()
+
+ */
+
+
+
 async function loadQuiz (){
+
+
+    let currentQuestion = 0;
 
      const scores = {
         "Fiffen": 0,
@@ -16,43 +44,50 @@ async function loadQuiz (){
 
      const data = await response.json(); //Läs innehållet i response och tolka det som json
 
-     const element = document.querySelector("#question");
+     const elQuestion = document.querySelector("#question"); //HTML-element, därför börjar den med "el"
+      
      const elAnswers = document.querySelector("#answers")
 
+     function showQuestion(){
 
+        if (currentQuestion >= data.questions.length) {
+        console.log("Quizet är slut!");
+        return;
+    }
 
+        elAnswers.textContent = "";
 
-     console.log(data);
+        const question = data.questions[currentQuestion]; // Spara den frågan vi är på just nu i variabeln question
 
-     data.questions.forEach(question => {
-        element.textContent = question.question;
-
+        elQuestion.textContent = question.question; //Visa fråga
 
         question.answers.forEach(answer => {
         const button = document.createElement("button");
 
+        
         button.textContent = answer.text;
 
         button.addEventListener("click", () => { //lägg till eventlistener som reagerar på klick
         scores[answer.character]++;
         console.log(scores);
+        currentQuestion++;
+        showQuestion();
         });
 
         elAnswers.append(button);
 
-    
-
      })
-
-     });
+    }
 
      
 
-    console.log(data.characters);
+    showQuestion();
     
 }
 
 loadQuiz();
+
+
 
 
 
