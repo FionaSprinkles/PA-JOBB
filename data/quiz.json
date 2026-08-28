@@ -1,0 +1,35 @@
+{
+    "characters":[
+
+        {
+            "name": "Fiffen"
+        },
+
+        {
+            "name": "Artisten Själv"
+        },
+
+        {
+            "name": "Rasø"
+        },
+
+        {
+            "name": "Ynis"    
+        }
+
+    ],
+
+
+    "questions":[
+        {
+            "question": "Vad äter du helst en fredagkväll?",
+            "answers":[
+                "Pizza med pommes",
+                "Äter inte fast föda",
+                "Grönsakssoppa",
+                "En gurka"
+            ]
+        }
+    ]
+
+}
