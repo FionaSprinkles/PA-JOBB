@@ -7,6 +7,15 @@ async function loadCharacters (){
 
     const characters = await response.json(); //Läs innehållet i response och tolka det som json
 
+     const element = document.querySelector("#characters");
+
+     console.log(characters[0].name);
+     console.log(element);
+
+     characters.forEach(character => {
+        element.textContent += character.name;
+     });
+
     console.log(characters);
 }
 
