@@ -51,7 +51,7 @@ async function loadQuiz (){
      function showQuestion(){
 
         if (currentQuestion >= data.questions.length) {
-        console.log("Quizet är slut!");
+        showResult();
         return;
     }
 
@@ -78,6 +78,24 @@ async function loadQuiz (){
 
      })
     }
+
+    function showResult() {
+
+    let winner = "";
+    let highestScore = 0;
+
+    Object.entries(scores).forEach(([character, score]) => {
+
+        if (score > highestScore) {
+            highestScore = score;
+            winner = character;
+        }
+
+    });
+
+    elQuestion.textContent = `Du är ${winner}!`;
+    elAnswers.textContent = `Ni svarade samma på ${highestScore} frågor av ${data.questions.length}.`;
+}
 
      
 
