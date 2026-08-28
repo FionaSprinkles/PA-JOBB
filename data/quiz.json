@@ -24,10 +24,22 @@
         {
             "question": "Vad äter du helst en fredagkväll?",
             "answers":[
-                "Pizza med pommes",
-                "Äter inte fast föda",
-                "Grönsakssoppa",
-                "En gurka"
+                {
+                    "text": "Pizza med pommes",
+                    "character": "Fiffen"
+                },
+                {
+                    "text": "Äter inte fast föda",
+                    "character": "Artisten själv"
+                },
+                {
+                    "text": "Grönsakssoppa",
+                    "character": "Rasø"
+                },
+                {
+                    "text": "En gurka",
+                    "character": "Ynis"
+                }
             ]
         }
     ]

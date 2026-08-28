@@ -1,4 +1,13 @@
 async function loadQuiz (){
+
+     const scores = {
+        "Fiffen": 0,
+        "Artisten Själv": 0,
+        "Rasø": 0,
+        "Ynis": 0
+    };
+
+
     const response = await fetch("data/quiz.json");
 
     if (!response.ok) {
@@ -22,9 +31,16 @@ async function loadQuiz (){
         question.answers.forEach(answer => {
         const button = document.createElement("button");
 
-        button.textContent = answer;
+        button.textContent = answer.text;
+
+        button.addEventListener("click", () => { //lägg till eventlistener som reagerar på klick
+        scores[answer.character]++;
+        console.log(scores);
+        });
 
         elAnswers.append(button);
+
+    
 
      })
 
@@ -33,6 +49,7 @@ async function loadQuiz (){
      
 
     console.log(data.characters);
+    
 }
 
 loadQuiz();
