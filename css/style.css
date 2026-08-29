@@ -155,11 +155,17 @@ body {
 /* ----- FOOTER ----- */
 
 footer{
+    color: #B4ED39;
     background-color: #363947;
     border-color: #ED8939;
     border-style: dashed;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding: 30px;
 
 }
+ footer img{
+    width: 25%;
+ }
