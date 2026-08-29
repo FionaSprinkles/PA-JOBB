@@ -1,0 +1,68 @@
+{
+    "characters":[
+
+        {
+            "name": "Fiffen"
+        },
+
+        {
+            "name": "Artisten Själv"
+        },
+
+        {
+            "name": "Rasø"
+        },
+
+        {
+            "name": "Ynis"    
+        }
+
+    ],
+
+
+    "questions":[
+        {
+            "question": "Vad äter du helst en fredagkväll?",
+            "answers":[
+                {
+                    "text": "Pizza med pommes",
+                    "character": "Fiffen"
+                },
+                {
+                    "text": "Äter inte fast föda",
+                    "character": "Artisten Själv"
+                },
+                {
+                    "text": "Grönsakssoppa",
+                    "character": "Rasø"
+                },
+                {
+                    "text": "En gurka",
+                    "character": "Ynis"
+                }
+            ]
+        },
+        {
+            "question": "Vilken årstid är bäst??",
+            "answers":[
+                {
+                    "text": "Höst",
+                    "character": "Fiffen"
+                },
+                {
+                    "text": "Vinter",
+                    "character": "Artisten Själv"
+                },
+                {
+                    "text": "Vår",
+                    "character": "Rasø"
+                },
+                {
+                    "text": "Sommar",
+                    "character": "Ynis"
+                }
+            ]
+        }
+    ]
+
+}
