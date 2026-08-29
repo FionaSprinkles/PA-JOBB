@@ -116,7 +116,10 @@ async function loadQuiz (){
     
 }
 
-loadQuiz();
+loadQuiz().catch(error => {
+    console.error(error)//visa error i konsolen
+}
+);
 
 
 
