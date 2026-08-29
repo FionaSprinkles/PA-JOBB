@@ -56,9 +56,21 @@ form.addEventListener("submit", (event) => {
     event.preventDefault();
 
     const title = document.querySelector("#jobTitle").value;
+
+    if (title.toLowerCase().includes("skibidi")) {
+    alert("TYVÄRR INGEN SKIBIDI 🚽");
+    return;
+}
+
     const location = document.querySelector("#jobLocation").value;
     const description = document.querySelector("#jobDescription").value;
     const salary = document.querySelector("#jobSalary").value;
+
+    if (salary.length <= 3) {
+    alert("LÖN MÅSTE VARA MER ÄN TRE TECKEN");
+    return;
+    }
+
 
     //Gör ett objekt av alla konstanter ↑ ovanför
     const job = { 
