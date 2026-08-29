@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
 
+
 header img{
     width: 100%;
     display: block; /*Inget mellanrum mellan header och nav*/
@@ -65,6 +66,8 @@ nav a:hover::after {
 body {
     margin: 0%;
     background-color: #7c993c;
+
+    cursor: url("../img/cursor.png"), auto;
     
     
 }
@@ -169,3 +172,82 @@ footer{
  footer img{
     width: 25%;
  }
+
+
+ /* ----- LEDIGA JOBB -----*/
+
+#jobsMain{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+
+#jobsMain h1 {
+    grid-column: 1 / -1; /*Annars hamnar h1 inne i griden fel*/
+    text-align: center;
+}
+
+ /* ----- lediga-jobb-listan ----- */
+ #jobList{
+
+    background-color: #363947;
+    
+    
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+    
+    padding: 30px;
+    text-align: center;
+
+    border-color: #ED8939;
+    border-style: dashed;
+ }
+
+ #jobList article {
+    background-color: #363947;
+    color: #B4ED39;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 3px dashed #ED8939;
+}
+
+/* ----- lägg ut ett jobb ----- */
+#jobs-form {
+    background-color: #363947;
+    
+    color: #B4ED39;
+    
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+
+    height: 80%;
+    
+    padding: 30px;
+    text-align: center;
+
+    border-color: #ED8939;
+    border-style: dashed;
+}
+
+#addJob {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#jobDescription {
+    min-height: 20px;
+    resize: vertical;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#addJob button {
+    background-color: #B4ED39;
+    color: #363947;
+    border: none;
+    font-weight: bold;
+    
+}
