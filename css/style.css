@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+
 
 header img{
     width: 100%;
@@ -12,6 +14,7 @@ header img{
 nav ul{
     margin: 0%;
     padding: 0%;
+    padding-bottom: 7px;
 
     width: 100%;
     height: 30px;
@@ -24,6 +27,10 @@ nav ul{
 }
 
 nav a{
+    font-family: "Rock Salt", cursive;
+    color: #B4ED39;
+    text-decoration: none;
+
     height: 100%;
     display: flex;
     align-items: center; /*Centrera upp och ner*/
@@ -93,6 +100,8 @@ body {
 
 #quiz {
     background-color: #363947;
+    color: #B4ED39;
+    
     width: 80%;
     max-width: 700px;
     margin: 0 auto;
