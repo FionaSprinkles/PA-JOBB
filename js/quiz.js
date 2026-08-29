@@ -95,6 +95,19 @@ async function loadQuiz (){
 
     elQuestion.textContent = `Du är ${winner}!`;
     elAnswers.textContent = `Ni svarade samma på ${highestScore} frågor av ${data.questions.length}.`;
+
+
+    //Gör quizet igen-knappen  ↓
+    const button = document.createElement("button");
+
+    button.textContent = "GÖR QUIZET IGEN";
+
+    button.addEventListener("click", () => {
+        location.reload(); //När användaren klickar på knappen, ladda om sidan. 
+    });
+
+    elAnswers.append(button);
+
 }
 
      
