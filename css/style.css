@@ -89,6 +89,30 @@ body {
     text-align: center;
 }
 
+/* ----- QUIZ ----- */
+
+#quiz {
+    background-color: #363947;
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+
+    border-color: #ED8939;
+    border-style: dashed;
+}
+
+#answers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+#answers button {
+    width: 100%;
+}
+
 
 /* ----- ZigZag bild - text - text - bild ----- */
 
