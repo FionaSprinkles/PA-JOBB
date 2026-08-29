@@ -12,14 +12,34 @@ och om det inte finns något sparat -> gör tom array.
 */
 let jobs = JSON.parse(localStorage.getItem("jobs")) || []; 
 
+let defaultjobs = []; //Behövs så att jag inte råkar lägga in redan inlagda jobb i localstorage
+
 console.log(jobs);
+
+//Fetcha redan inlagda jobb
+async function loadJobs() {
+
+const response = await fetch("data/jobs.json");
+
+    if (!response.ok) {
+        throw new Error (`Kunde inte ladda :( Försök igen om en stund)`);
+    }
+
+     const data = await response.json(); //Läs innehållet i response och tolka det som json
+
+      
+     defaultjobs = data;
+
+    showJobs(); 
+}
+
 
 //skapa element och Visa alla inlagda jobb
     function showJobs(){
         
         elJobList.textContent="";
 
-        jobs.forEach(job => {
+    [...defaultjobs, ...jobs].forEach(job => { //Hämta allt från både defaultjobs och jobs
 
             //För varje jobb gör:
 
@@ -92,4 +112,5 @@ form.addEventListener("submit", (event) => {
     console.log(jobs);
 });
 
-showJobs();
+
+loadJobs(); //loadJobs kör showJobs åt mig nu

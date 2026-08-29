@@ -1,0 +1,14 @@
+[
+    {
+        "title": "Gurkansvarig",
+        "location": "Kylskåpet",
+        "description": "Ansvara för att gurkorna mår bra.",
+        "salary": "1 gurka/timme"
+    },
+    {
+        "title": "Professionell fikare",
+        "location": "Personalrummet",
+        "description": "Dricka kaffe och äta fikabröd.",
+        "salary": "Kaffe"
+    }
+]
