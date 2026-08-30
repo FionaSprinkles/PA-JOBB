@@ -1,5 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Rock+Salt&display=swap');
 
+/* Fonter */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Oswald", Georgia, serif;
+}
+
+nav a {
+    font-family: "Rock Salt", Arial, sans-serif;
+}
 
 
 header img{
@@ -30,7 +44,6 @@ nav ul{
 }
 
 nav a{
-    font-family: "Rock Salt", cursive;
     color: #B4ED39;
     text-decoration: none;
 
@@ -226,6 +239,14 @@ footer{
 }
 
 #jobsMain h1 {
+    color: #B4ED39;
+
+    background-image: url(/img/border.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    padding: 30px;
+
     grid-column: 1 / -1; /*Annars hamnar h1 inne i griden fel*/
     text-align: center;
 }
