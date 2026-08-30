@@ -1,3 +1,20 @@
+@import 'https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap';
+@import 'https://fonts.googleapis.com/css2?family=Oswald&family=Rock+Salt&display=swap';
+
+/* Fonter */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: "Oswald", Georgia, serif;
+}
+
+nav a {
+    font-family: "Rock Salt", Arial, sans-serif;
+}
+
 
 header img{
     width: 100%;
@@ -10,8 +27,11 @@ header img{
 
 
 nav ul{
+    background-image:url(../img/border.png);
+
     margin: 0%;
     padding: 0%;
+    padding-bottom: 7px;
 
     width: 100%;
     height: 30px;
@@ -24,6 +44,9 @@ nav ul{
 }
 
 nav a{
+    color: #B4ED39;
+    text-decoration: none;
+
     height: 100%;
     display: flex;
     align-items: center; /*Centrera upp och ner*/
@@ -36,7 +59,7 @@ nav a:hover::before {
     display: inline-block; /*Visar bilden på samma rad som länken*/
     width: 50px;
     height: 30px;
-    background-image: url("../img/wing-left.png");
+    background-image:url("../img/wing-left.png");
     background-size: contain; /*Anpassa bilden i området utan att beskära, skalar ner till rätt size*/
     background-repeat: no-repeat;
 
@@ -47,7 +70,7 @@ nav a:hover::after {
     display: inline-block; /*Visar bilden på samma rad som länken*/
     width: 50px;
     height: 30px;
-    background-image: url("../img/wing-right.png");
+    background-image:url("../img/wing-right.png");
     background-size: contain;
     background-repeat: no-repeat;
     
@@ -58,13 +81,15 @@ nav a:hover::after {
 body {
     margin: 0%;
     background-color: #7c993c;
+
+    cursor: url("../img/cursor.png"), auto;
     
     
 }
 
 /* ----- Första sektionen av sidan ----- */
 #main{
-    background-image: url("../img/Pavag-till-jobb.png");
+    background-image:url("../img/Pavag-till-jobb.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
 
@@ -78,22 +103,79 @@ body {
 
     /*Här placerar jag ut var på griden min text ska vara*/
 #main h1 {
+    color: #B4ED39;
+
+    background-image:url(../img/border.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    /*Den här koden gör så att min border.png FÖLJER, tidigare kunde texten hamna utanför*/
+    box-sizing: border-box;
+    align-self: start;
+    min-width: 0;
+    overflow-wrap: break-word;
+
+    padding: 80px 60px;
+
     grid-column: 4 / 7;
     grid-row: 3 / 3;
     text-align: center;
 }
 
 #main p{
-    grid-column: 4/7;
-    grid-row: 4/6;
+    color: #B4ED39;
+
+    background-image:url(../img/border.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    
+    /*Den här koden gör så att min border.png FÖLJER, tidigare kunde texten hamna utanför*/
+    box-sizing: border-box;
+    align-self: start;
+    min-width: 0;
+    overflow-wrap: break-word;
+
+    padding: 80px 60px;
+    
+
+    grid-column: 2/9;
+    grid-row: 4/7;
     text-align: center;
+
+    padding-top: 50px;
+}
+
+/* ----- QUIZ ----- */
+
+#quiz {
+    background-color: #363947;
+    color: #B4ED39;
+    
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+
+    border-color: #ED8939;
+    border-style: dashed;
+}
+
+#answers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+#answers button {
+    width: 100%;
 }
 
 
 /* ----- ZigZag bild - text - text - bild ----- */
 
 #zigzag {
-    background-image: url("../img/bakgrund1.png");
+    background-image:url("../img/bakgrund1.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
 
@@ -114,6 +196,16 @@ body {
     align-self: center;
 }
 #zigzag p {
+    color: #B4ED39;
+
+    background-image:url(../img/border.png);
+    background-size: 100% 100%;
+
+    background-repeat: no-repeat;
+
+    padding: 80px 60px;
+    
+
     justify-self: center;
     align-self: center;
     text-align: center;
@@ -122,11 +214,332 @@ body {
 /* ----- FOOTER ----- */
 
 footer{
+    color: #B4ED39;
     background-color: #363947;
     border-color: #ED8939;
     border-style: dashed;
 
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding: 30px;
 
+}
+ footer img{
+    width: 25%;
+ }
+
+
+ /* ----- LEDIGA JOBB -----*/
+
+#jobsMain{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+}
+
+#jobsMain h1 {
+    color: #B4ED39;
+
+    background-image:url(../img/border.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    padding: 30px;
+
+    grid-column: 1 / -1; /*Annars hamnar h1 inne i griden fel*/
+    text-align: center;
+}
+
+ /* ----- lediga-jobb-listan ----- */
+ #jobList{
+
+    background-color: #363947;
+    
+    
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+    
+    padding: 30px;
+    text-align: center;
+
+    border-color: #ED8939;
+    border-style: dashed;
+ }
+
+ #jobList article {
+    background-color: #363947;
+    color: #B4ED39;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 3px dashed #ED8939;
+}
+
+/* ----- lägg ut ett jobb ----- */
+#jobs-form {
+    background-color: #363947;
+    
+    color: #B4ED39;
+    
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+
+    height: 80%;
+    
+    padding: 30px;
+    text-align: center;
+
+    border-color: #ED8939;
+    border-style: dashed;
+}
+
+#addJob {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#jobDescription {
+    min-height: 20px;
+    resize: vertical;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#addJob button {
+    background-color: #B4ED39;
+    color: #363947;
+    border: none;
+    font-weight: bold;
+    
+}
+
+
+/* ----- OM OSS ----- */
+
+
+
+#about section{
+    color: #B4ED39;
+
+    background-image:url(../img/border.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    padding: 30px;
+    text-align: center;
+}
+#about p{
+    width: 60%;
+    margin: 0 auto; /*placerar paragrafen mitt i sektionen*/
+    text-align: center;/*centrerar texten inne i paragrafen*/
+}
+
+#about table{
+    background-color: #363947;
+    
+    color: #B4ED39;
+    
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+
+    height: 80%;
+    
+    padding: 30px;
+    text-align: center;
+
+    border-color: #ED8939;
+    border-style: dashed;
+}
+#signatures th{
+    padding-top: 40px;
+    text-align: center;
+}
+
+#sign{
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* ----- MOBIL ----- */
+
+@media screen and (max-width: 600px){
+
+     /* NAV */
+    nav ul {
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+
+    /* ----- STARTSIDAN ----- */
+
+    #main {
+        aspect-ratio: auto;
+        min-height: 700px;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        padding: 30px 15px;
+    }
+
+    #main h1 {
+        grid-column: 1;
+        grid-row: 1;
+
+        
+        font-size: 24px;
+    }
+
+    #main p {
+        grid-column: 1;
+        grid-row: 2;
+
+        width: auto;
+        padding: 50px 30px;
+        font-size: 14px;
+    }
+
+
+    /* ----- QUIZ ----- */
+
+    #quiz {
+        width: auto;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    #answers {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ----- ZIGZAG ----- */
+
+    #zigzag {
+        aspect-ratio: auto;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 30px 15px;
+    }
+
+    #zigzag img {
+        width: 70%;
+    }
+
+    #zigzag p {
+        padding: 50px 30px;
+        font-size: 14px;
+    }
+
+    
+    #zigzag p:nth-of-type(2) {/* Byter plats på sista texten och bilden */
+    grid-row: 4;
+    }
+
+
+    /* ----- JOBB ----- */
+
+    #jobsMain {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    #jobList,
+    #jobs-form {
+        width: auto;
+        margin: 20px;
+        padding: 20px;
+    }
+
+
+    /* ----- OM OSS ----- */
+
+    #about section {
+        padding: 40px 20px;
+    }
+
+    #about p {
+        width: auto;
+    }
+
+    #about table {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #sign {
+        width: 60%;
+    }
+
+
+    /* ----- FOOTER ----- */
+
+    footer {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    footer img {
+        width: 30%;
+    }
+}
+
+
+/* ----- TABLET ----- */
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+
+    #main {
+        aspect-ratio: auto;
+
+        min-height: 800px;
+       
+
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto auto;
+    }
+
+    #main h1 {
+        background-image:url(../img/border.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        padding: 10px 30px;
+        font-size: 28px;
+        grid-row: 1;
+        transform: translateY(80px);
+    }
+
+    #main p {
+        padding: 50px 30px;
+        font-size: 16px;
+        grid-row: 2;
+    }
+
+    
+    #zigzag p {
+        padding: 50px 30px;
+        font-size: 16px;
+    }
+
+    #quiz,
+    #jobList,
+    #jobs-form {
+        width: 80%;
+        box-sizing: border-box;
+    }
+
+    footer img {
+        width: 30%;
+    }
 }
