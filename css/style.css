@@ -90,6 +90,14 @@ body {
 
     /*Här placerar jag ut var på griden min text ska vara*/
 #main h1 {
+    color: #B4ED39;
+
+    background-image: url(/img/border.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    padding: 80px 60px;
+
     grid-column: 4 / 7;
     grid-row: 3 / 3;
     text-align: center;
@@ -106,7 +114,7 @@ body {
     
 
     grid-column: 4/7;
-    grid-row: 4/6;
+    grid-row: 4/7;
     text-align: center;
 
     padding-top: 50px;
@@ -273,4 +281,53 @@ footer{
     border: none;
     font-weight: bold;
     
+}
+
+
+/* ----- OM OSS ----- */
+
+
+
+#about section{
+    color: #B4ED39;
+
+    background-image: url(/img/border.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    padding: 30px;
+    text-align: center;
+}
+#about p{
+    width: 60%;
+    margin: 0 auto; /*placerar paragrafen mitt i sektionen*/
+    text-align: center;/*centrerar texten inne i paragrafen*/
+}
+
+#about table{
+    background-color: #363947;
+    
+    color: #B4ED39;
+    
+    width: 80%;
+    max-width: 700px;
+    margin: 0 auto;
+
+    height: 80%;
+    
+    padding: 30px;
+    text-align: center;
+
+    border-color: #ED8939;
+    border-style: dashed;
+}
+#signatures th{
+    padding-top: 40px;
+    text-align: center;
+}
+
+#sign{
+    width: 40%;
+    display: block;
+    margin: 0 auto;
 }
