@@ -461,3 +461,52 @@ footer{
         width: 30%;
     }
 }
+
+
+/* ----- TABLET ----- */
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+
+    #main {
+        aspect-ratio: auto;
+
+        min-height: 800px;
+       
+
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto auto;
+    }
+
+    #main h1 {
+        background-image: url(/img/border.png);
+        background-size: 100% 70%;
+        background-repeat: no-repeat;
+        padding: 10px 30px;
+        font-size: 28px;
+        grid-row: 1;
+        transform: translateY(80px);
+    }
+
+    #main p {
+        padding: 50px 30px;
+        font-size: 16px;
+        grid-row: 2;
+    }
+
+    
+    #zigzag p {
+        padding: 50px 30px;
+        font-size: 16px;
+    }
+
+    #quiz,
+    #jobList,
+    #jobs-form {
+        width: 80%;
+        box-sizing: border-box;
+    }
+
+    footer img {
+        width: 30%;
+    }
+}
