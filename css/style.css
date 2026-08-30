@@ -27,7 +27,7 @@ header img{
 
 
 nav ul{
-    background-image: url(/img/border.png);
+    background-image: url(../img/border.png);
 
     margin: 0%;
     padding: 0%;
@@ -105,7 +105,7 @@ body {
 #main h1 {
     color: #B4ED39;
 
-    background-image: url(/img/border.png);
+    background-image: url(../img/border.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
@@ -125,7 +125,7 @@ body {
 #main p{
     color: #B4ED39;
 
-    background-image: url(/img/border.png);
+    background-image: url(../img/border.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     
@@ -198,7 +198,7 @@ body {
 #zigzag p {
     color: #B4ED39;
 
-    background-image: url(/img/border.png);
+    background-image: url(../img/border.png);
     background-size: 100% 100%;
 
     background-repeat: no-repeat;
@@ -241,7 +241,7 @@ footer{
 #jobsMain h1 {
     color: #B4ED39;
 
-    background-image: url(/img/border.png);
+    background-image: url(../img/border.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
@@ -324,7 +324,7 @@ footer{
 #about section{
     color: #B4ED39;
 
-    background-image: url(/img/border.png);
+    background-image: url(../img/border.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
@@ -511,7 +511,7 @@ footer{
     }
 
     #main h1 {
-        background-image: url(/img/border.png);
+        background-image: url(../img/border.png);
         background-size: 100% 100%;
         background-repeat: no-repeat;
         padding: 10px 30px;
