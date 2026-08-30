@@ -331,3 +331,128 @@ footer{
     display: block;
     margin: 0 auto;
 }
+
+
+/* ----- MOBIL ----- */
+
+@media screen and (max-width: 600px){
+
+     /* NAV */
+    nav ul {
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+
+    /* ----- STARTSIDAN ----- */
+
+    #main {
+        aspect-ratio: auto;
+        min-height: 700px;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        padding: 30px 15px;
+    }
+
+    #main h1 {
+        grid-column: 1;
+        grid-row: 1;
+
+        
+        font-size: 24px;
+    }
+
+    #main p {
+        grid-column: 1;
+        grid-row: 2;
+
+        width: auto;
+        padding: 50px 30px;
+        font-size: 14px;
+    }
+
+
+    /* ----- QUIZ ----- */
+
+    #quiz {
+        width: auto;
+        margin: 20px;
+        padding: 20px;
+    }
+
+    #answers {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* ----- ZIGZAG ----- */
+
+    #zigzag {
+        aspect-ratio: auto;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 30px 15px;
+    }
+
+    #zigzag img {
+        width: 70%;
+    }
+
+    #zigzag p {
+        padding: 50px 30px;
+        font-size: 14px;
+    }
+
+
+    /* ----- JOBB ----- */
+
+    #jobsMain {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    #jobList,
+    #jobs-form {
+        width: auto;
+        margin: 20px;
+        padding: 20px;
+    }
+
+
+    /* ----- OM OSS ----- */
+
+    #about section {
+        padding: 40px 20px;
+    }
+
+    #about p {
+        width: auto;
+    }
+
+    #about table {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #sign {
+        width: 60%;
+    }
+
+
+    /* ----- FOOTER ----- */
+
+    footer {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    footer img {
+        width: 30%;
+    }
+}
