@@ -27,7 +27,7 @@ header img{
 
 
 nav ul{
-    background-image: url(../img/border.png);
+    background-image:url(../img/border.png);
 
     margin: 0%;
     padding: 0%;
@@ -59,7 +59,7 @@ nav a:hover::before {
     display: inline-block; /*Visar bilden på samma rad som länken*/
     width: 50px;
     height: 30px;
-    background-image: url("../img/wing-left.png");
+    background-image:url("../img/wing-left.png");
     background-size: contain; /*Anpassa bilden i området utan att beskära, skalar ner till rätt size*/
     background-repeat: no-repeat;
 
@@ -70,7 +70,7 @@ nav a:hover::after {
     display: inline-block; /*Visar bilden på samma rad som länken*/
     width: 50px;
     height: 30px;
-    background-image: url("../img/wing-right.png");
+    background-image:url("../img/wing-right.png");
     background-size: contain;
     background-repeat: no-repeat;
     
@@ -89,7 +89,7 @@ body {
 
 /* ----- Första sektionen av sidan ----- */
 #main{
-    background-image: url("../img/Pavag-till-jobb.png");
+    background-image:url("../img/Pavag-till-jobb.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
 
@@ -105,7 +105,7 @@ body {
 #main h1 {
     color: #B4ED39;
 
-    background-image: url(../img/border.png);
+    background-image:url(../img/border.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
@@ -125,7 +125,7 @@ body {
 #main p{
     color: #B4ED39;
 
-    background-image: url(../img/border.png);
+    background-image:url(../img/border.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     
@@ -175,7 +175,7 @@ body {
 /* ----- ZigZag bild - text - text - bild ----- */
 
 #zigzag {
-    background-image: url("../img/bakgrund1.png");
+    background-image:url("../img/bakgrund1.png");
     background-size: 100% auto;
     background-repeat: no-repeat;
 
@@ -198,7 +198,7 @@ body {
 #zigzag p {
     color: #B4ED39;
 
-    background-image: url(../img/border.png);
+    background-image:url(../img/border.png);
     background-size: 100% 100%;
 
     background-repeat: no-repeat;
@@ -241,7 +241,7 @@ footer{
 #jobsMain h1 {
     color: #B4ED39;
 
-    background-image: url(../img/border.png);
+    background-image:url(../img/border.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
@@ -324,7 +324,7 @@ footer{
 #about section{
     color: #B4ED39;
 
-    background-image: url(../img/border.png);
+    background-image:url(../img/border.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
@@ -511,7 +511,7 @@ footer{
     }
 
     #main h1 {
-        background-image: url(../img/border.png);
+        background-image:url(../img/border.png);
         background-size: 100% 100%;
         background-repeat: no-repeat;
         padding: 10px 30px;
